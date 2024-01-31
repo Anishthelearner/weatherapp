@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #FFD700, #FF6347);
+
+}
+.main{
+    width: 75%;
+    height: 80%;
+    background-color: rgb(53, 178, 182);
+    box-shadow: 13px 16px 20px 7px rgba(0,0,0,4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.contain{
+    text-align: center;
+    position: relative;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    color: black;
+    margin: 5px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+input:focus{
+    border:none;
+}
+#btn{ 
+    /* background-color: rgba(0,0,0,0); */
+}
+button{
+   border: none;
+}
+i{
+    font-size: 25px; 
+}
+.not-found{
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1%;
+}
+.contryname, .temp{
+    font-size: 25px;
+    font-weight: 800;
+}
+.contryname{
+    padding-left: 3%;
+}
+img{
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
+}
+.weekly div img{
+    float: right;
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  
+}
+.row1 .temp p,.contryname p{
+    font-size: 15px;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 5%;
+}
+
+.row2{
+    margin-top:3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row2 h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+span, .weekly p{
+    font-weight: bold;
+    font-size: larger;
+}
+.weekly{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.weekly div{
+    align-items: center;
+}
+.weekly h4{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+}
+.weekly div p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+footer{
+    position: absolute;
+    bottom:-10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+}
